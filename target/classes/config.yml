@@ -1,0 +1,6 @@
+# Config.yml file change all the settings for in-game en for non in-game
+
+
+prefix: '&9&lPolitieTools &7&l>> '
+permission: 'politietools.politietools'
+meldingingen-krijg-prefix: 'POLITIE'

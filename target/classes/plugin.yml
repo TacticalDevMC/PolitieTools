@@ -1,0 +1,14 @@
+name: PolitieTools
+main: me.joran.politietools.PolitieTools
+version: 1.0.0
+authors: [ItsJustJoran]
+description: De PolitieTools plugin.
+depend:
+  - MinetopiaSDB
+commands:
+  politietools:
+     description: PolitieTools main command
+     aliases: [plt, politie]
+  112:
+    description: Stuur een bericht naar bepaalde mensen.
+    aliases: [100, 101, 102]

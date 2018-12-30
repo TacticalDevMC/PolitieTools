@@ -1,0 +1,4 @@
+# Messages.yml file, change all the messages from in-game
+
+# Wil je de prefix ophalen? Doe dan de variable {prefix}
+geen-permissions-message: "&c&lGeen permissions!"
