@@ -6,13 +6,18 @@ import org.bukkit.entity.Player;
 
 public class ChatUtils {
 
+    private static String prefix = FileManager.get("config.yml").getString("prefix");
+
     public static String format(String message) {
         return ChatColor.translateAlternateColorCodes('&', message);
     }
 
-    public static String prefix = FileManager.get("config.yml").get("prefix").toString().replace("&", "§");
-
     public static void sendMessage(Player player, String message) {
         player.sendMessage(prefix + format(message));
     }
+
+    public static String getPrefix() {
+        return prefix;
+    }
+
 }

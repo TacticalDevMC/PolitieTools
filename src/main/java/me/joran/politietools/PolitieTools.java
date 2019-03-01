@@ -1,8 +1,8 @@
 package me.joran.politietools;
 
-import me.joran.politietools.commands.Politie112Command;
+import me.joran.politietools.commands.PoliceDispatchCommand;
 import me.joran.politietools.commands.PolitieToolsCommand;
-import me.joran.politietools.events.onPlayerJoinQuitEvent;
+import me.joran.politietools.events.PlayerConnectionListener;
 import me.joran.politietools.manager.FileManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
@@ -44,10 +44,10 @@ public final class PolitieTools extends JavaPlugin {
 
     private void registerCommands() {
         getCommand("politietools").setExecutor(new PolitieToolsCommand());
-        getCommand("112").setExecutor(new Politie112Command());
+        getCommand("112").setExecutor(new PoliceDispatchCommand());
     }
 
     private void registerEvents(PluginManager pm) {
-        pm.registerEvents(new onPlayerJoinQuitEvent(), this);
+        pm.registerEvents(new PlayerConnectionListener(), this);
     }
 }

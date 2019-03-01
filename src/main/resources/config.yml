@@ -2,5 +2,12 @@
 
 
 prefix: '&9&lPolitieTools &7&l>> '
-permission: 'politietools.politietools'
 meldingingen-krijg-prefix: 'POLITIE'
+
+Join:
+  telefoonNummerJoinMessage: true
+  geenTelefoonNummerJoinMessage: true
+
+permissions:
+  main: 'politietools.politietools'
+  help: 'politietools.help'
